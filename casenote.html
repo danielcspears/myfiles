@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- stylesheets -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="main.css" rel="stylesheet" type="text/css" media="all">
+    <title>Case Note Generator V0.99</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- start form -->
+      <div id="assessment">
+        <h1>Case Note Generator V0.99</h1>
+        <hr>
+        <form role="form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control name" type="text" placeholder="Enter participant's first and then last name ..">
+          </div>
+          <div class="form-group">
+            <label for="employer">Most Recent Employer</label>
+            <input id="employer" class="form-control employer" type="text" placeholder="Enter most employer ..">
+          </div>
+          <div class="form-group">
+            <label for="occupation">Occupation</label>
+            <input id="occupation" class="form-control occupation" type="text" placeholder="Enter last job title">
+          </div>
+          <div class="form-group">
+          	<label for="years">Enter the Years of Experience</label>
+          	<input id="years" class ="form-control years" type="text" placeholder="Enter the years of experience">
+          </div>
+          <div class="form-group">
+          	<label for="desired">Desired Occupation</label>
+          	<input id="desired" class ="form-control desired" type="text" placeholder="Enter desired job title">
+          </div>
+          <div class="form-group">
+            <label for="salary">Salary</label>
+            <input id="salary" class="form-control salary" type="text" placeholder="Enter salary desired ..">
+          </div>
+          <div class="form-group">
+            <label for="work-shift">Enter the desired work schedule ..</label>
+            <input id="work-shift" class="form-control work-shift" type="text" placeholder="i.e. weekdays, graveyard, or mon-fri, 8am to 5pm...">
+          </div>
+          <div class="form-group">
+            <label for="lmi">Industry or Sector</label>
+            <input id="lmi" class="form-control lmi" type="text" placeholder="Enter the industry or Sectorthat person worked in" ..">
+          </div>
+          <div class="form-group">
+            <label for="add">Additional comments</label>
+            <input id="add" class="form-control add" type="text" placeholder="Enter additional comments" ..">
+          </div>
+          <div>
+          </div>
+        </form>
+        <button id="btn-click" type="submit" class="btn btn-primary btn-lg center-block">Create!</button>
+        <hr>
+      </div>
+      <!-- end form -->
+
+      <!-- start casenote-->
+      <div id="casenote">
+        <h1>Sp1 Case Note</h1>
+        <hr>
+        <p>The Employment Strategy for <span class="name"></span> has been reviewed and the participant has been referred to skills development for additional job seeker services as warranted.<br><br>
+			An orientation was given outlining the following available Career Center services:
+			<ol>
+			    <li>Access to computers and office machines</li>
+			    <li>Assessments for skills and interests</li>
+			    <li>Website navigation</li>
+			    <li>Other online tools to aid in job search</li>
+			    <li>Labor Market Information</li>
+			    <li>Grant funded Training</li>
+			</ol>
+			The orientation also provided an outline of the Re-Employment process and expectations for successful compliance.<br><br>
+			Staff conducted an assessment of <span class="name"></span> background: education, work history, occupational desires, skill sets, strengths, and any identifiable barriers.
+	<br><br> Using the assessed information along with current labor market information, staff developed an individualized plan to aid the customer in obtaining employment.
+    <br>
+        <span class="name"></span> most recently worked at <span class="employer"></span> as a <span class="occupation"></span> and
+        has <span class="years"></span> year(s) of experience in the <span class="lmi"></span> industry.   
+        
+        
+        <span class="name"></span>
+        <span id="qual"></span> as a <span class="desired"></span>.
+    <br><br>
+       <span class="add"></span>
+    
+    </p>
+    <br><br>
+        <div>
+          <button type="submit" class="btn btn-primary btn-lg" id="play-btn">Another Entry?</button>
+    <br><br>
+    <!--end casenote-->
+</div>
+
+
+        
+  
+  
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>  
+	
+	
+
+
+  </body>
+</html>
